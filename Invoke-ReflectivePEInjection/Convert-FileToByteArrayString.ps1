@@ -4,16 +4,11 @@
 $File
 )
 
-[Byte[]]$Bytes = [System.IO.File]::ReadAllBytes($File)
-
-$ByteStr = ""
-for ($i = 0; $i -lt $Bytes.Length; $i++)
-{
-    $ByteStr += $Bytes[$i]
-    if ($i -ne ($Bytes.Length-1))
-    {
-        $ByteStr += ","
-    }
+try { 
+    $BytesStr = ([System.IO.File]::ReadAllBytes($File) -join ",")
+}
+catch {
+    # error
 }
 
 return $ByteStr
