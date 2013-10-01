@@ -1,6 +1,4 @@
-function Invoke-Mimikatz
-{
-﻿<#
+<#
 .SYNOPSIS
 
 This script leverages Mimikatz 1.0 and Invoke-ReflectivePEInjection to reflectively load Mimikatz completely in memory. This allows you to do things such as
@@ -2710,4 +2708,4 @@ Function Main
 }
 
 Main
-}
+
