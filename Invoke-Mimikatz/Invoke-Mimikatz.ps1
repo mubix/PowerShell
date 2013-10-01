@@ -1,3 +1,5 @@
+function Invoke-Mimikatz
+{
 ﻿<#
 .SYNOPSIS
 
@@ -2708,3 +2710,4 @@ Function Main
 }
 
 Main
+}
